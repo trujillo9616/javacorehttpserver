@@ -69,15 +69,14 @@ public class User {
         this.dateModified = dateModified;
     }
 
-    @Override
     public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", age='" + age + '\'' +
-                ", email='" + email + '\'' +
-                ", dateCreated='" + dateCreated + '\'' +
-                ", dateModified='" + dateModified + '\'' +
+        return "{\n" +
+                "\t\"name\" : \"" + name + "\",\n" +
+                "\t\"lastName\" : \"" + lastName + "\",\n" +
+                "\t\"age\" : \"" + age + "\",\n" +
+                "\t\"email\" : \"" + email + "\",\n" +
+                "\t\"dateCreated\" : \"" + dateCreated + "\",\n" +
+                "\t\"dateModified\" : \"" + dateModified + "\"\n" +
                 '}';
     }
 
