@@ -1,9 +1,7 @@
 import java.time.LocalDateTime;
 import java.util.Comparator;
-import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import java.util.stream.Collectors;
 
 public class UsersData {
 
@@ -43,10 +41,10 @@ public class UsersData {
     }
 
     // List
-    public List<User> listUsers() {
-        return usersMap.values()
-                .stream()
-                .sorted(Comparator.comparing(User::getName))
-                .collect(Collectors.toList());
+    public String listUsers() {
+        String stringBuilder = "{\n\t\"users\" : " +
+                usersMap.values().stream().sorted(Comparator.comparing(User::getName)).toList() +
+                "\n}";
+        return stringBuilder;
     }
 }
