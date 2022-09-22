@@ -12,23 +12,24 @@ public class Handler {
             String method = exchange.getRequestMethod();
 
             if (Objects.equals(method, "GET")) {
-                System.out.println("Called GET method");
+                UsersRoutes.getUser(exchange);
             }
 
             else if (Objects.equals(method, "POST")) {
-                System.out.println("Called POST method");
+                UsersRoutes.createUser(exchange);
             }
 
             else if (Objects.equals(method, "PUT")) {
-                System.out.println("Called POST method");
+                UsersRoutes.updateUser(exchange);
             }
 
             else if (Objects.equals(method, "DELETE")) {
-                System.out.println("Called POST method");
+                UsersRoutes.deleteUser(exchange);
             }
 
             else {
                 System.out.println("Called a method not yet implemented!");
+                throw new IOException();
             }
         }
     }
