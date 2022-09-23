@@ -135,7 +135,7 @@ Don't forget to give the project a star! Thanks again!
 
 Adrian Trujillo - [@trujillo9616](https://twitter.com/trujillo9616)
 
-Project Link: [https://github.com/trujillo9616/BreakableToy](https://github.com/trujillo9616/BreakableToy)
+Project Link: [https://github.com/trujillo9616/javacorehttpserver](https://github.com/trujillo9616/javacorehttpserver)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
